@@ -1,0 +1,93 @@
+body {
+  margin: auto;
+  width: max-content;
+  padding-top: 8%;
+  background-color: #3f3f3f;
+}
+
+/* svg {
+  fill: #ffffff;
+} */
+
+.main {
+  width: 300px;
+  height: 500px;
+  padding: 15px;
+  background: radial-gradient(transparent, #050e29);
+  position: relative;
+}
+
+.main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.main:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+i {
+  font-size: 1.6em;
+}
+
+.icons {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 330px;
+  height: 560px;
+  margin: auto;
+  position: absolute;
+  background-color: transparent;
+  opacity: 0;
+  z-index: 1;
+}
+
+.icons:hover {
+  opacity: 1;
+  transition: 1s;
+  height: 480px;
+}
+
+.icons .save {
+  position: absolute;
+  right: 35px;
+  top: 10px;
+  background: red;
+  border-radius: 50px 50px;
+  color: white;
+  font-weight: 700;
+  width: 70px;
+  height: 30px;
+  font-size: 1.1em;
+  border: none;
+}
+
+.icons .ellipsis {
+  position: absolute;
+  right: 35px;
+  bottom: 10px;
+}
+
+.icons .share {
+  position: absolute;
+  right: 90px;
+  bottom: 10px;
+}
+
+.icons .redirect {
+  position: absolute;
+  left: 35px;
+  bottom: 10px;
+}
+
+/* .redirect span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
