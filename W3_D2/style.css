@@ -1,0 +1,92 @@
+/* Reset rules: */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://jolstatic.fr/www/captures/6131/5/155355.jpg");
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.container img {
+  height: 80px;
+}
+
+.container {
+  margin-left: 100px;
+  margin-top: 150px;
+}
+
+h1 {
+  color: white;
+}
+
+.description-series {
+  display: flex;
+  font-size: 1.3em;
+}
+
+.description-series div {
+  margin: 14px 14px 14px 0;
+}
+
+.description-series .hd,
+.audio {
+  border: 1px solid #8d8d8d;
+}
+
+.description-series .year,
+.season,
+.hd,
+.audio {
+  color: #8d8d8d;
+}
+
+.description-series .match {
+  color: #5ec87b;
+}
+
+.description-text {
+  font-size: 1.3em;
+  width: 600px;
+}
+
+.text {
+  color: #8d8d8d;
+}
+
+.actors {
+  color: #8d8d8d;
+  font-style: italic;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+.genre {
+  color: #8d8d8d;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.carousel-1 {
+  display: flex;
+  margin-top: 280px;
+}
+
+.carousel-1 img {
+  height: 200px;
+  padding: 5px;
+}
+
+.carousel-2 {
+  display: flex;
+  margin-top: 50px;
+}
+
+.carousel-2 img {
+  height: 200px;
+  padding: 5px;
+}
