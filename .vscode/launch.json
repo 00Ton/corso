@@ -10,7 +10,7 @@
       "type": "node",
       "name": "Run Current File",
       "request": "launch",
-      "program": "W4_D1\\script.js"
+      "program": "W4_D4\\script.js"
     },
     {
       "type": "node-terminal",
@@ -22,13 +22,19 @@
       "type": "node",
       "name": "Run Current File",
       "request": "launch",
-      "program": "${workspaceFolder}\\W4_D1\\S2P1-scaricabile.js"
+      "program": "${workspaceFolder}\\W4_D4\\script.js"
+    },
+    {
+      "type": "node-terminal",
+      "name": "JavaScript Debug Terminal",
+      "request": "launch",
+      "cwd": "${workspaceFolder}"
     },
     {
       "type": "node",
       "name": "Run Current File",
       "request": "launch",
-      "program": "${workspaceFolder}\\W4_D1\\script.js"
+      "program": "..\\Desktop\\Epicode\\Quarta Lezione Arrays e metodi JS\\wdpt0523-array-intro-a5e72612cead16460f01701341b59adeb8816cd3\\script.js"
     }
   ]
 }

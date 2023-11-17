@@ -198,30 +198,30 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 // Input: a = 3, b = -1, c = 4, d = -2
 // Output: maggiore = 4, minore = -2
 
-// let a = 1;
-// let b = 2;
-// let c = 3;
-// let d = 4;
+let a = 1;
+let b = 2;
+let c = 3;
+let d = 4;
 
-// if (a > b && a > c && a > d) {
-//   console.log(a + " è il maggiore");
-// } else if (b > a && b > c && b > d) {
-//   console.log(d + " è il maggiore");
-// } else if (c > a && c > b && c > d) {
-//   console.log(c + " è il maggiore");
-// } else if (d > a && d > b && d > c) {
-//   console.log(d + " è il maggiore");
-// }
+if (a > b && a > c && a > d) {
+  console.log(a + " è il maggiore");
+} else if (b > a && b > c && b > d) {
+  console.log(d + " è il maggiore");
+} else if (c > a && c > b && c > d) {
+  console.log(c + " è il maggiore");
+} else if (d > a && d > b && d > c) {
+  console.log(d + " è il maggiore");
+}
 
-// if (a < b && a < c && a < d) {
-//   console.log(a + " è il minore");
-// } else if (b < a && b < c && b < d) {
-//   console.log(d + " è il minore");
-// } else if (c < a && c < b && c < d) {
-//   console.log(c + " è il minore");
-// } else if (d < a && d < b && d < c) {
-//   console.log(d + " è il minore");
-// }
+if (a < b && a < c && a < d) {
+  console.log(a + " è il minore");
+} else if (b < a && b < c && b < d) {
+  console.log(d + " è il minore");
+} else if (c < a && c < b && c < d) {
+  console.log(c + " è il minore");
+} else if (d < a && d < b && d < c) {
+  console.log(d + " è il minore");
+}
 
 // Esercizio 2: stringhe e numeri
 // Quanti anni ha?
@@ -259,9 +259,8 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 // let sum = 8;
 // let num = sum;
 
-// for (let i = 0; i <= sum; i++) {
+// for (let i = 0; i <= sum; i++, num--) {
 //   console.log(num, i);
-//   num--;
 // }
 
 // Esercizio 4: metodo e proprietà
