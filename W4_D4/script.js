@@ -3,10 +3,12 @@
 /*
 Oggi il tuo compito è creare la logica per un sito di e-commerce che deve supportare sconti extra per utenti speciali.
 A partire da una lista di prezzi, un utente e un costo di spedizione l'algoritmo deve determinare il costo totale del carrello.
-ATTENZIONE! Gli argomenti di questa settimana sono cruciali per lo svolgimento per il lavoro di un developer (il 90% del dati che gestirai saranno array di oggetti!!) quindi 
+ATTENZIONE! Gli argomenti di questa settimana sono cruciali per lo svolgimento per il lavoro di un developer 
+(il 90% del dati che gestirai saranno array di oggetti!!) quindi 
 assicurati di COMPRENDERE la logica. Se ti trovi in difficolta', scrivi ad un membro del teaching staff! :) 
 
-Se l'utente ha la proprietà "isAmbassador" con valore true, il carrello DEVE venire scontato del 30%, PRIMA di calcolare la spedizione (anche gli utenti speciali pagano le spedizioni).
+Se l'utente ha la proprietà "isAmbassador" con valore true, il carrello DEVE venire scontato del 30%,
+PRIMA di calcolare la spedizione (anche gli utenti speciali pagano le spedizioni).
 Se l'utente ha la proprietà "isAmbassador" con valore false, il carrello NON deve venire scontato.
 In entrambi i casi, la spedizione è gratuita per ogni carrello con costo superiore a 100. 
 Altrimenti, aggiungi il valore fornito per coprire il costo della spedizione.
@@ -42,9 +44,18 @@ Infine, crea un SECONDO array in cui inserirai SOLO gli ambassador.
 // let item = prices[1];
 // let buyingUser = amy;
 
-// Condition
+// Carrello Totale
+// let totalCart = 0;
+// for (let index = 0; index < prices.length; index++) {
+// totalCart = prices[index] + totale;
+// totalCart += prices[index];
+// }
 
-// if (buyingUser.isAmbassador === true && item > 100) {
+// console.log(totale);
+
+// Condition con prezzo singolo, inserire total cart per prezzo totale del carrello
+
+// if (buyingUser.isAmbassador && item > 100) {
 //   let totalPrice = item * sale;
 //   console.log(totalPrice);
 // } else if (buyingUser.isAmbassador === true && item < 100) {
@@ -57,6 +68,7 @@ Infine, crea un SECONDO array in cui inserirai SOLO gli ambassador.
 //   let totalPrice = item + shippingCost;
 //   console.log(totalPrice);
 // }
+// function applyAmbassadorDiscount() {}
 
 // Arrays
 
@@ -111,17 +123,17 @@ Infine, crea un SECONDO array in cui inserirai SOLO gli ambassador.
 // Variante:
 // Prova ad ordinali in modo crescente.
 
-let num = 10;
-const randomArr = [];
-for (let index = 0; index < num; index++) {
-  randomArr.push(Math.floor(Math.random() * 10));
-  // console.log(randomArr);
-}
-randomArr.sort();
-console.log(randomArr);
+// let num = 10;
+// const randomArr = [];
+// for (let index = 0; index < num; index++) {
+//   randomArr.push(Math.floor(Math.random() * 10));
+//   console.log(randomArr);
+// }
+// randomArr.sort();
+// console.log(randomArr);
 
-randomArr.reverse();
-console.log(randomArr);
+// randomArr.reverse();
+// console.log(randomArr);
 
 // Operazioni tra array
 //   Scrivi un programma che dati:
@@ -137,6 +149,28 @@ console.log(randomArr);
 //   Esempio:
 //     Input: a = [3, 7, 2, 5, 8, 1, 2, 5, 6, 4], b = [9, 3, 1, 4, 7, 6, 5, 10, 1, 5], operazione = "addizione"
 //     Output: c = [12, 10, 3, 9, 15, 7, 7, 15, 7, 9]
+
+// let num1 = 10;
+// const randomArr1 = [];
+// for (let index = 0; index < num1; index++) {
+//   randomArr1.push(Math.floor(Math.random() * 10) + 1);
+// }
+// console.log(randomArr1);
+
+// let num2 = 10;
+// const randomArr2 = [];
+// for (let index = 0; index < num2; index++) {
+//   randomArr2.push(Math.floor(Math.random() * 10) + 1);
+// }
+// console.log(randomArr2);
+
+// const arraySum = [];
+
+// for (let index = 0; index < num1; index++) {
+//   arraySum.push(randomArr1[index] + randomArr2[index]);
+// }
+// console.log(arraySum);
+
 // La tombola magica
 //   Scrivi un programma che dato:
 
@@ -152,3 +186,48 @@ console.log(randomArr);
 //   In caso di vittoria dovrà essere stampato un messaggio "Hai fatto X",
 //   in caso di perdita dovrà essere mostrato il messaggio "Mi dispiace, hai perso!".
 //   (generazione numeri random https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+
+let num = 10;
+const randomArr = [];
+
+do {
+  const randomNumber = Math.floor(Math.random() * 90) + 1;
+  if (!randomArr.includes(randomNumber)) {
+    randomArr.push(randomNumber);
+  }
+} while (randomArr.length < num);
+
+console.log("Casuale:", randomArr);
+
+const chosenNum = [8, 66, 73, 2, 90, 53, 19, 20, 77, 7];
+console.log(chosenNum);
+
+let numIncluded = 0;
+for (let index = 0; index < chosenNum.length; index++) {
+  if (randomArr.includes(chosenNum[index])) {
+    numIncluded++;
+  }
+}
+
+console.log(numIncluded);
+
+switch (numIncluded) {
+  case 2:
+    console.log("Hai fatto Ambo!");
+    break;
+  case 3:
+    console.log("Hai fatto Terno!");
+    break;
+  case 4:
+    console.log("Hai fatto Quaterna!");
+    break;
+  case 5:
+    console.log("Hai fatto Cinquina!");
+    break;
+  case 10:
+    console.log("WTF Tombola!");
+    break;
+  default:
+    console.log("Mi dispiace hai perso :(");
+    break;
+}
