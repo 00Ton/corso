@@ -187,47 +187,75 @@ Infine, crea un SECONDO array in cui inserirai SOLO gli ambassador.
 //   in caso di perdita dovrà essere mostrato il messaggio "Mi dispiace, hai perso!".
 //   (generazione numeri random https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
 
-let num = 10;
-const randomArr = [];
+// let num = 10;
+// const randomArr = [];
 
-do {
-  const randomNumber = Math.floor(Math.random() * 90) + 1;
-  if (!randomArr.includes(randomNumber)) {
-    randomArr.push(randomNumber);
-  }
-} while (randomArr.length < num);
+// do {
+//   const randomNumber = Math.floor(Math.random() * 90) + 1;
+//   if (!randomArr.includes(randomNumber)) {
+//     randomArr.push(randomNumber);
+//   }
+// } while (randomArr.length < num);
 
-console.log("Casuale:", randomArr);
+// console.log("Casuale:", randomArr);
 
-const chosenNum = [8, 66, 73, 2, 90, 53, 19, 20, 77, 7];
-console.log(chosenNum);
+// const chosenNum = [8, 66, 73, 2, 90, 53, 19, 20, 77, 7];
+// console.log(chosenNum);
 
-let numIncluded = 0;
-for (let index = 0; index < chosenNum.length; index++) {
-  if (randomArr.includes(chosenNum[index])) {
-    numIncluded++;
-  }
-}
+// let numIncluded = 0;
+// for (let index = 0; index < chosenNum.length; index++) {
+//   if (randomArr.includes(chosenNum[index])) {
+//     numIncluded++;
+//   }
+// }
 
-console.log(numIncluded);
+// console.log(numIncluded);
 
-switch (numIncluded) {
-  case 2:
-    console.log("Hai fatto Ambo!");
+// switch (numIncluded) {
+//   case 2:
+//     console.log("Hai fatto Ambo!");
+//     break;
+//   case 3:
+//     console.log("Hai fatto Terno!");
+//     break;
+//   case 4:
+//     console.log("Hai fatto Quaterna!");
+//     break;
+//   case 5:
+//     console.log("Hai fatto Cinquina!");
+//     break;
+//   case 10:
+//     console.log("WTF Tombola!");
+//     break;
+//   default:
+//     console.log("Mi dispiace hai perso :(");
+//     break;
+// }
+
+//* Dato un array di numeri interi, stampare in console il doppio del valore dell'elemento (se questo ha indice pari), il triplo se questo ha indice dispari.
+// Fornite voi la vostra soluzione...
+
+const kappa = [2, 3, 4, 5, 6, 7];
+// let pick = kappa[3]; cambia indice manualmente
+let randomPick = kappa[Math.floor(Math.random() * kappa.length)]; //numero random da kappa[]
+console.log(randomPick);
+
+let double = 2;
+let triple = 3;
+
+// if (pick % 2 === 0) {
+//   console.log(pick * double, "il numero è pari");
+// } else if (!pick % 2 === 0) {
+//   console.log(pick * triple, "il numero è dispari");
+// }
+
+switch (randomPick % 2) {
+  case 0:
+    console.log(randomPick * double, "il numero è pari");
     break;
-  case 3:
-    console.log("Hai fatto Terno!");
-    break;
-  case 4:
-    console.log("Hai fatto Quaterna!");
-    break;
-  case 5:
-    console.log("Hai fatto Cinquina!");
-    break;
-  case 10:
-    console.log("WTF Tombola!");
-    break;
+  case 1:
+    console.log(randomPick * triple, "il numero è dispari");
   default:
-    console.log("Mi dispiace hai perso :(");
+    undefined;
     break;
 }
