@@ -235,13 +235,13 @@ Infine, crea un SECONDO array in cui inserirai SOLO gli ambassador.
 //* Dato un array di numeri interi, stampare in console il doppio del valore dell'elemento (se questo ha indice pari), il triplo se questo ha indice dispari.
 // Fornite voi la vostra soluzione...
 
-const kappa = [2, 3, 4, 5, 6, 7];
-// let pick = kappa[3]; cambia indice manualmente
-let randomPick = kappa[Math.floor(Math.random() * kappa.length)]; //numero random da kappa[]
-console.log(randomPick);
+// const kappa = [2, 3, 4, 5, 6, 7];
+// let pick = kappa[3]; cambia indice manualmente o usa randomPick per indice random
+// let randomPick = kappa[Math.floor(Math.random() * kappa.length)]; //numero random da kappa[]
+// console.log(randomPick);
 
-let double = 2;
-let triple = 3;
+// let double = 2;
+// let triple = 3;
 
 // if (pick % 2 === 0) {
 //   console.log(pick * double, "il numero è pari");
@@ -249,13 +249,72 @@ let triple = 3;
 //   console.log(pick * triple, "il numero è dispari");
 // }
 
-switch (randomPick % 2) {
-  case 0:
-    console.log(randomPick * double, "il numero è pari");
-    break;
-  case 1:
-    console.log(randomPick * triple, "il numero è dispari");
-  default:
-    undefined;
-    break;
-}
+// switch (randomPick % 2) {
+//   case 0:
+//     console.log(randomPick * double, "il numero è pari");
+//     break;
+//   case 1:
+//     console.log(randomPick * triple, "il numero è dispari");
+//   default:
+//     undefined;
+//     break;
+// }
+
+//! M1 - Epicode - JavaScript Extra Training (Marco Longo)
+
+//* ARRAY:
+//? Ex.1 (Easy) - Realizzare un programma che costruisca un array di 20 elementi. Ogni elemento dev'essere pari al proprio indice nell'array.
+// Es. [0, 1, 2, 3, 4, 5 ... 19]
+
+// const arr = [];
+// for (let index = 0; index < 20; index++) {
+//   arr.push(index);
+// }
+// console.log(arr);
+
+//? Ex.2 (Medium) - Realizzare un programma che, dato un array di numeri interi, stampi in console la media di tutti i valori.
+// N.B. Utilizza solo i concetti visti a lezione, niente scorciatoie!
+
+// const arr = [1, 2, 3, 4, 5, 7, 8, 9, 20, 202, 173];
+// let sum = 0;
+
+// for (let index = 0; index < arr.length; index++) {
+//   sum = sum + arr[index];
+// }
+// console.log(sum / arr.length);
+
+//? Ex.3 (Medium) - Realizzare un programma che rimuova i multipli dispari di 3 dall'array riportato sotto.
+// N.B. 18 è un multiplo pari di 3, 21 è un multiplo dispari di 3.
+
+// let array = [20, 31, 15, 78, 48, 27, 61, 51];
+// let newArray = [];
+
+// for (let index = 0; index < array.length; index++) {
+//   let num = array[index];
+
+//   if (num % 3 !== 0 || num % 2 === 0) {
+//     newArray.push(num);
+//   }
+// }
+
+// console.log(newArray);
+
+//? Ex.4 (Hard) - Dato un array di numeri interi (nums) ed un numero intero (target), ritornare i 2 indici degli elementi nell’array nums che, sommati, restituiscano il numero target.
+//? Assumere che ogni nums fornito in input accetti solo una soluzione e che questo contenga solo numeri diversi fra loro.
+// Esempio:
+// Input: nums = [4, 9, 11, 13] , target = 22
+// Output: [1,3]
+
+// nums [0, 1, 2, 3, 4, 5, 6]
+// Suggerimento: Sapevi che i cicli for possono essere innestati?
+
+// const nums = [4, 9, 11, 13];
+// const target = 15;
+
+// for (let index = 0; index < nums.length; index++) {
+//   for (let x = index + 1; x < nums.length; x++) {
+//     if (nums[x] + nums[index] === target) {
+//       console.log([x, index]);
+//     }
+//   }
+// }
