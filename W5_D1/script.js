@@ -120,6 +120,16 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+// let calc = 0;
+
+// function area(l1, l2) {
+//   return (calc = l1 * l2);
+// }
+
+// let x = 10;
+// let y = 5;
+// console.log(area(x, y));
+
 /* ESERCIZIO 2
  Scrivi una funzione chiamata "crazyDiff" che calcola la differenza assoluta tra un numero fornito e 19.
  Se il valore calcolato è più grande di 19, la funzione deve tornare tale risultato moltiplicato per 3.
@@ -127,12 +137,45 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+// let x = -40;
+// a = crazyDiff(x);
+
+// function crazyDiff(n) {
+//   n = Math.abs(n - 19);
+//   if (n > 19) {
+//     n = n * 3;
+//     console.log("Il numero è superiore a 19");
+//   } else console.log("il numero è inferiore a 19");
+
+//   return n;
+// }
+
+// console.log(a);
+
 /* ESERCIZIO 3
  Scrivi una funzione chiamata "codify" che accetta una stringa come parametro.
- La funzione deve aggiungere la parola "code" all'inizio della stringa fornita e ritornare il risultato, ma se la stringa fornita comincia proprio con "code" allora deve ritornarla senza modifiche.
+ La funzione deve aggiungere la parola "code" all'inizio della stringa fornita e ritornare il risultato, 
+ ma se la stringa fornita comincia proprio con "code" allora deve ritornarla senza modifiche.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+// let codeCheck = "";
+
+// function codify(string) {
+//   if (typeof string !== "string") {
+//     return "Input error";
+//   }
+
+//   if (string.startsWith("code")) {
+//     return (codeCheck = string);
+//   }
+//   return "code" + string;
+// }
+
+// let x = "dajemine";
+// a = codify(x);
+// console.log(a);
 
 /* ESERCIZIO 4
  Scrivi una funzione chiamata "check3and7" la quale accetta un numero intero positivo come parametro.
@@ -142,8 +185,34 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+// function check3and7(n) {
+//   if (n < 0 || n % 1 !== 0) {
+//     return "input error";
+//   }
+//   if (n % 3 === 0 || n % 7 === 0) {
+//     return true;
+//   }
+//   return false;
+// }
+
+// let x = 70;
+// a = check3and7(x);
+// console.log(a);
+
 /* ESERCIZIO 5
  Scrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+// function cutString(string) {
+//   if (typeof string !== "string") {
+//     return "input error";
+//   }
+
+//   return string.substring(1, string.length - 1);
+// }
+
+// let x = "Giovanni";
+// a = cutString(x);
+// console.log(a);
