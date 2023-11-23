@@ -216,3 +216,123 @@
 // let x = "Giovanni";
 // a = cutString(x);
 // console.log(a);
+
+// 🍰 Esercizio 1
+// Scrivi una funzione che prenda due parametri, base e altezza, e restituisca l'area del rettangolo corrispondente.
+// let calc = 0;
+// function area(b, h) {
+//   calc = b * h;
+//   return calc;
+// }
+
+// let base = 10;
+// let height = 5;
+// a = area(base, height);
+// console.log(calc);
+
+// 🍰 Esercizio 2
+// Scrivi una funzione che prenda un parametro numero e restituisca true se il numero è pari, altrimenti restituisca false.
+
+// let result = 0;
+// function evenOdd(n) {
+//   if (n % 2 === 0) {
+//     result = true;
+//   } else result = false;
+// }
+
+// let x = 8;
+// a = evenOdd(x);
+// console.log(result);
+
+// 🍰 Esercizio 3
+// Scrivi una funzione che prenda due parametri di tipo stringa e restituisca la loro concatenazione.
+// let result = "";
+// function linked(s1, s2) {
+//   result = s1.concat() + s2.concat();
+// }
+
+// let x = "Mio";
+// let y = "Padre";
+// a = linked(x, y);
+// console.log(result);
+
+// 🍰 Esercizio 4
+// Scrivi una funzione che prenda un parametro numero e restituisca il suo fattoriale.
+
+// function factorial(n) {
+//   let res = 1;
+//   for (let i = n; i > 0; i--) {
+//     res *= i; // res = res * i;
+//   }
+//   return res;
+// }
+
+// let result = factorial(5);
+// console.log(result);
+
+// 🍰 Esercizio 5
+// Scrivi una funzione che generi un numero casuale compreso tra un valore minimo e un valore massimo.
+// let result = 1;
+// let randomGenerator = Math.random();
+
+// function randomMinMaxNum(nMin, nMAx) {
+//   let range = nMAx - nMin;
+//   let randomRange = randomGenerator * range;
+//   result = randomRange + nMin;
+//   return result;
+// }
+
+// let x = 9;
+// let y = 10;
+// a = randomMinMaxNum(x, y);
+// console.log(result);
+
+// 🍰 Esercizio 6
+// Scrivi una funzione che prenda una parola come parametro e restituisca true se la parola è palindroma, altrimenti restituisca false.
+
+// let result = null;
+
+// function mirror(mirrorString) {
+//   if (mirrorString === mirrorString.split("").reverse().join("")) {
+//     return (result = true);
+//   } else return (result = false);
+// }
+
+// let x = "osso";
+// a = mirror(x);
+// console.log(result);
+
+// 🍰 Esercizio 7
+// Scrivi una funzione che prenda un array di numeri come parametro e restituisca la somma di tutti gli elementi.
+
+// let sum = null;
+
+// function arrFun(arrSum) {
+//   for (let index = 0; index < arrSum.length; index++) {
+//     sum += arrSum[index];
+//   }
+//   return sum;
+// }
+
+// let arr = [1, 2, 3, 4, 5];
+// a = arrFun(arr);
+// console.log(sum);
+
+// 🍰 Esercizio 8
+// Scrivi una funzione che prenda un array di numeri come parametro e restituisca un oggetto con le proprietà
+// "massimo" e "minimo" che rappresentano rispettivamente il valore massimo e il valore minimo dell'array.
+// let result = [];
+// function minMax(object) {
+//   for (let index = 0; index < object.length; index++) {
+//     return result.push(object[index], object[object.length - 1]);
+//   }
+// }
+
+// let arr = [1, 2, 3, 4, 5, 1000];
+// let a = minMax(arr);
+// console.log(result);
+
+// 🍰 Esercizio 9
+// Scrivi una funzione che prenda una stringa come parametro e restituisca il numero di vocali presenti nella stringa.
+// 🍰 Esercizio 10
+// Scrivi una funzione che prenda un array di numeri come parametro e restituisca la media di tutti gli elementi.
