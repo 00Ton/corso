@@ -334,5 +334,15 @@
 
 // 🍰 Esercizio 9
 // Scrivi una funzione che prenda una stringa come parametro e restituisca il numero di vocali presenti nella stringa.
+
+let result = [];
+function vocalEngeneering(vowels) {
+  return result.push(vowels.replace(/[aeiou]/gi, ""));
+}
+
+let x = "Are you even trying";
+let a = vocalEngeneering(x);
+console.log(result);
+
 // 🍰 Esercizio 10
 // Scrivi una funzione che prenda un array di numeri come parametro e restituisca la media di tutti gli elementi.
