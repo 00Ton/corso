@@ -17,7 +17,7 @@ function changeAddress() {
 }
 
 function changeA() {
-  let myA = document.querySelectorAll("table a"); //ricordarsi di questa sintassi
+  let myA = document.querySelectorAll("table a"); //ricordarsi di questa sintassi per selezionare tutti
   for (let index = 0; index < myA.length; index++) {
     myA[index].classList.add("items");
   }
