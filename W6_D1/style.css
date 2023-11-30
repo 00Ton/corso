@@ -1,0 +1,82 @@
+* {
+  font-family: Avenir, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  width: 700px;
+  background: url(assets/4950286_19873.jpg);
+  background-size: 100%;
+  background-position-y: -140px;
+}
+
+main {
+  display: flex;
+  position: relative;
+  top: 300px;
+  right: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: avenir;
+  margin-left: 50px;
+}
+
+p {
+  font-weight: 100;
+  position: relative;
+  bottom: 15px;
+  left: 15px;
+}
+
+div.mainBlock {
+  display: flex;
+  margin-top: 40px;
+}
+
+div.jobLocation {
+  padding: 10px;
+}
+
+div.jobTitle {
+  padding: 10px;
+}
+
+button {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 0px;
+  color: white;
+  background: black;
+  font-size: 1em;
+  width: 100px;
+  height: 25px;
+  margin-left: 30px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+ul {
+  margin-top: 30px;
+  list-style-type: disclosure-closed;
+  background-color: white;
+}
+
+td {
+  border: 1px solid black;
+}

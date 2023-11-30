@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>KAPPA SEARCH</h1>
+      <p>Gotta find that job asap</p>
+      <div class="mainBlock">
+        <div class="jobTitle">
+          <label for="jobTitle">Titolo:</label>
+          <input
+            type="text"
+            placeholder="  Il tuo titolo lavorativo"
+            id="jobTitle"
+          />
+        </div>
+
+        <div class="jobLocation">
+          <label for="jobLocation">Posizione Geografica:</label>
+          <input type="text" placeholder="  La tua location" id="jobLocation" />
+        </div>
+      </div>
+      <div>
+        <button onclick="performSearch()">Cerca</button>
+        <button onclick="clearResults()">Clear</button>
+      </div>
+      <ul id="resultsList"></ul>
+      <tr id="resultTable"></tr>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
