@@ -84,23 +84,25 @@ const jobs = [
     location: "US, NY, Saint Bonaventure",
   },
 ];
-// Interazione case insensitive
+// Interazione case insensitive in minuscolo
 function searchJobs(title, location) {
   const lowerTitle = title.toLowerCase();
   const lowerLocation = location.toLowerCase();
+  // itera i campi all'interno dell'array jobs
+  const results = [];
 
-  // Soddisfa entrambe le condizioni
-  const results = jobs.filter((job) => {
+  for (const job of jobs) {
     const lowerJobTitle = job.title.toLowerCase();
     const lowerJobLocation = job.location.toLowerCase();
-
-    return (
+    // Aggiunge gli elementi nell'array results se entrambi gli elementi includono il minuscolo
+    if (
       lowerJobTitle.includes(lowerTitle) &&
       lowerJobLocation.includes(lowerLocation)
-    );
-  });
-
-  // Restituisci result e count
+    ) {
+      results.push(job);
+    }
+  }
+  // ritorna i risultati nel campi result e count
   return {
     result: results,
     count: results.length,
@@ -109,8 +111,12 @@ function searchJobs(title, location) {
 
 // Crea la funzione per l'algoritmo di ricerca
 function performSearch() {
+  // cancella la lista ad ogni ricerca
+  const resultsList = document.getElementById("resultsList");
+  resultsList.innerHTML = "";
   const jobTitle = document.getElementById("jobTitle").value;
   const jobLocation = document.getElementById("jobLocation").value;
+
   // Chiama la funzione di ricerca
   const searchResult = searchJobs(jobTitle, jobLocation);
 
@@ -169,8 +175,14 @@ document
     }
   });
 
-// Clear button
+// Clear button per gli input e lista
 function clearResults() {
   const resultsList = document.getElementById("resultsList");
   resultsList.innerHTML = "";
+
+  const jobTitle = document.getElementById("jobTitle");
+  jobTitle.value = "";
+
+  const jobLocation = document.getElementById("jobLocation");
+  jobLocation.value = "";
 }

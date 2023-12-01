@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;600&display=swap");
+
 * {
-  font-family: Avenir, Helvetica, sans-serif;
+  font-family: Sen, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -23,29 +25,35 @@ main {
 }
 
 h1 {
-  font-size: 3em;
-  font-family: avenir;
+  font-size: 3.3em;
+  font-family: Sen;
   margin-left: 50px;
 }
 
 p {
   font-weight: 100;
   position: relative;
-  bottom: 15px;
+  font-size: 1.1em;
+  bottom: 5px;
   left: 15px;
 }
 
 div.mainBlock {
   display: flex;
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
-div.jobLocation {
+.jobLoc {
   padding: 10px;
 }
 
-div.jobTitle {
+.jobT {
   padding: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
 }
 
 button {

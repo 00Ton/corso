@@ -10,7 +10,7 @@
       "type": "node",
       "name": "Run Current File",
       "request": "launch",
-      "program": "W5_D1\\script.js"
+      "program": "W6_D1\\script.js"
     },
     {
       "type": "node-terminal",
@@ -22,7 +22,7 @@
       "type": "node",
       "name": "Run Current File",
       "request": "launch",
-      "program": "${workspaceFolder}\\W5_D1\\script.js"
+      "program": "${workspaceFolder}\\W6_D1\\script.js"
     },
     {
       "type": "node-terminal",

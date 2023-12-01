@@ -11,26 +11,25 @@
       <h1>KAPPA SEARCH</h1>
       <p>Gotta find that job asap</p>
       <div class="mainBlock">
-        <div class="jobTitle">
+        <div class="jobT">
           <label for="jobTitle">Titolo:</label>
           <input
-            type="text"
-            placeholder="  Il tuo titolo lavorativo"
             id="jobTitle"
+            type="text"
+            placeholder=" Il tuo titolo lavorativo"
           />
         </div>
 
-        <div class="jobLocation">
+        <div class="jobLoc">
           <label for="jobLocation">Posizione Geografica:</label>
-          <input type="text" placeholder="  La tua location" id="jobLocation" />
+          <input id="jobLocation" type="text" placeholder=" La tua location" />
         </div>
       </div>
-      <div>
-        <button onclick="performSearch()">Cerca</button>
-        <button onclick="clearResults()">Clear</button>
+      <div class="buttons">
+        <button type="submit" onclick="performSearch()">Cerca</button>
+        <button type="button" onclick="clearResults()">Clear</button>
       </div>
       <ul id="resultsList"></ul>
-      <tr id="resultTable"></tr>
     </main>
     <script src="script.js"></script>
   </body>
