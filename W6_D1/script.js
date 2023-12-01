@@ -111,15 +111,25 @@ function searchJobs(title, location) {
 
 // Crea la funzione per l'algoritmo di ricerca
 function performSearch() {
-  // cancella la lista ad ogni ricerca
+  // Cancella la lista ad ogni ricerca
   const resultsList = document.getElementById("resultsList");
   resultsList.innerHTML = "";
+  // Dai un valore ai campi di input
   const jobTitle = document.getElementById("jobTitle").value;
   const jobLocation = document.getElementById("jobLocation").value;
 
+  // Validazione della ricerca con il metodo trim, che rimuove lo spazio bianco in eccesso
+  if (jobTitle.trim() === "" || jobLocation.trim() === "") {
+    const errorMessageElement = document.getElementById("errorMessage");
+    errorMessageElement.textContent =
+      "Compila entrambi i campi prima di eseguire la ricerca 😁";
+    errorMessageElement.style.display = "block";
+    return;
+  }
+
   // Chiama la funzione di ricerca
   const searchResult = searchJobs(jobTitle, jobLocation);
-
+  // Crea le righe di tabella
   function createTable(result) {
     const tr = document.createElement("tr");
 
@@ -140,7 +150,7 @@ function performSearch() {
     const textLocation = document.createTextNode(result.location);
     tdLocation.appendChild(textLocation);
 
-    // Aggiungi le celle alla riga
+    // Injecta le celle alla riga
     tr.appendChild(tdTitle);
     tr.appendChild(tdLocation);
 

@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <video autoplay muted loop>
+      <source src="assets/video (1080p).mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
     <main>
       <h1>KAPPA SEARCH</h1>
       <p>Gotta find that job asap</p>
+
       <div class="mainBlock">
         <div class="jobT">
           <label for="jobTitle">Titolo:</label>
@@ -25,6 +30,7 @@
           <input id="jobLocation" type="text" placeholder=" La tua location" />
         </div>
       </div>
+      <div id="errorMessage"></div>
       <div class="buttons">
         <button type="submit" onclick="performSearch()">Cerca</button>
         <button type="button" onclick="clearResults()">Clear</button>

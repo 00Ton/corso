@@ -10,9 +10,9 @@
 body {
   margin: auto;
   width: 700px;
-  background: url(assets/4950286_19873.jpg);
+  /* background: url(assets/4950286_19873.jpg);
   background-size: 100%;
-  background-position-y: -140px;
+  background-position-y: -140px; */
 }
 
 main {
@@ -41,6 +41,8 @@ p {
 div.mainBlock {
   display: flex;
   margin-top: 25px;
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 20px;
 }
 
 .jobLoc {
@@ -87,4 +89,30 @@ ul {
 
 td {
   border: 1px solid black;
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0.9;
+}
+
+#errorMessage {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+  display: none;
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 20px;
+  width: 465px;
+  height: 30px;
+  text-align: center;
+  padding-top: 3px;
 }
