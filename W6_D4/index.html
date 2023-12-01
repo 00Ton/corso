@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Epicode Calculator JS (M.H.L.)</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <input
+        type="text"
+        class="calculator-screen"
+        id="display"
+        value="0"
+        disabled
+      />
+
+      <div class="calculator-keys">
+        <button type="button" class="operator" value="+">+</button>
+        <button type="button" class="operator" value="-">-</button>
+        <button type="button" class="operator" value="*">&times;</button>
+        <button type="button" class="operator" value="/">&divide;</button>
+
+        <button type="button" class="digit" value="7">7</button>
+        <button type="button" class="digit" value="8">8</button>
+        <button type="button" class="digit" value="9">9</button>
+
+        <button type="button" class="digit" value="4">4</button>
+        <button type="button" class="digit" value="5">5</button>
+        <button type="button" class="digit" value="6">6</button>
+
+        <button type="button" class="digit" value="1">1</button>
+        <button type="button" class="digit" value="2">2</button>
+        <button type="button" class="digit" value="3">3</button>
+
+        <button type="button" class="digit" value="0">0</button>
+        <button type="button" class="digit decimal" value=".">.</button>
+
+        <button
+          type="button"
+          class="all-clear"
+          value="all-clear"
+          onclick="resetCalc()"
+        >
+          AC
+        </button>
+        <button
+          type="button"
+          class="equal-sign"
+          value="="
+          onclick="resultCalc()"
+        >
+          =
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
